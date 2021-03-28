@@ -13,8 +13,10 @@ namespace Zadatak
         SqlConnection cn = new SqlConnection(@"Server=localhost\SQLEXPRESS;Database=baza;Trusted_Connection=True;");
         SqlCommand cm;
         public SqlDataAdapter da;
+        public SqlDataAdapter da2;
         List<SqlParameter> Params = new List<SqlParameter>();
         public DataTable dt;
+        public DataSet ds;
         public int recordcount;
         public string exception;
 
@@ -29,8 +31,11 @@ namespace Zadatak
                 Params.ForEach(p => cm.Parameters.Add(p));
                 Params.Clear();
                 dt = new DataTable();
+                ds = new DataSet();
                 da = new SqlDataAdapter(cm);
+                da2 = new SqlDataAdapter(cm);
                 recordcount = da.Fill(dt);
+                da2.Fill(ds);
             }
             catch(Exception e)
             {

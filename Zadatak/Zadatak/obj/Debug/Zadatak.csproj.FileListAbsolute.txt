@@ -9,3 +9,15 @@ C:\Users\Kikica\Desktop\C# zadatak\Zadatak\Zadatak\obj\Debug\Zadatak.Register.re
 C:\Users\Kikica\Desktop\C# zadatak\Zadatak\Zadatak\obj\Debug\Zadatak.csproj.GenerateResource.cache
 C:\Users\Kikica\Desktop\C# zadatak\Zadatak\Zadatak\obj\Debug\Zadatak.exe
 C:\Users\Kikica\Desktop\C# zadatak\Zadatak\Zadatak\obj\Debug\Zadatak.pdb
+C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\bin\Debug\Zadatak.exe.config
+C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\bin\Debug\Zadatak.exe
+C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\bin\Debug\Zadatak.pdb
+C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.csprojAssemblyReference.cache
+C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.Dodaj.resources
+C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.Form1.resources
+C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.Main.resources
+C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.Properties.Resources.resources
+C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.Register.resources
+C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.csproj.GenerateResource.cache
+C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.exe
+C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.pdb
