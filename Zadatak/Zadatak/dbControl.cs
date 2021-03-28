@@ -13,7 +13,6 @@ namespace Zadatak
         SqlConnection cn = new SqlConnection(@"Server=localhost\SQLEXPRESS;Database=baza;Trusted_Connection=True;");
         SqlCommand cm;
         public SqlDataAdapter da;
-        public SqlDataAdapter da2;
         List<SqlParameter> Params = new List<SqlParameter>();
         public DataTable dt;
         public DataSet ds;
@@ -31,15 +30,37 @@ namespace Zadatak
                 Params.ForEach(p => cm.Parameters.Add(p));
                 Params.Clear();
                 dt = new DataTable();
-                ds = new DataSet();
                 da = new SqlDataAdapter(cm);
-                da2 = new SqlDataAdapter(cm);
                 recordcount = da.Fill(dt);
-                da2.Fill(ds);
             }
             catch(Exception e)
             {
             exception= "Problem: " + e.Message;
+            }
+            finally
+            {
+                if (cn.State == ConnectionState.Open)
+                {
+                    cn.Close();
+                }
+            }
+        }
+        public void query2(string name)
+        {
+            exception = null;
+            try
+            {
+                cn.Open();
+                cm = new SqlCommand(name, cn);
+                Params.ForEach(p => cm.Parameters.Add(p));
+                Params.Clear();
+                ds = new DataSet();
+                da = new SqlDataAdapter(cm);
+                da.Fill(ds);
+            }
+            catch (Exception e)
+            {
+                exception = "Problem: " + e.Message;
             }
             finally
             {

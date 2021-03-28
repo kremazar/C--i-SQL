@@ -36,6 +36,9 @@ namespace Zadatak
         private void btnReg_Click(object sender, EventArgs e)
         {
             register();
+            Form rf = new Form1();
+            Hide();
+            rf.ShowDialog();
         }
 
         private void Register_FormClosing(object sender, FormClosingEventArgs e)
@@ -52,6 +55,11 @@ namespace Zadatak
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void txtPass_TextChanged(object sender, EventArgs e)
+        {
+            txtPass.PasswordChar = '*';
         }
     }
 }

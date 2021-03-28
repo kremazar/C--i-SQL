@@ -13,7 +13,6 @@ C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\bin\Debug\Zadatak.ex
 C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\bin\Debug\Zadatak.exe
 C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\bin\Debug\Zadatak.pdb
 C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.csprojAssemblyReference.cache
-C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.Dodaj.resources
 C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.Form1.resources
 C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.Main.resources
 C:\Users\Kikica\Desktop\C# zadatak\C--i-SQL\Zadatak\Zadatak\obj\Debug\Zadatak.Properties.Resources.resources

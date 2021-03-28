@@ -45,5 +45,10 @@ namespace Zadatak
                 mf.ShowDialog();
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            txtPass.PasswordChar = '*';
+        }
     }
 }

@@ -30,11 +30,7 @@ namespace Zadatak
             }
         }
 
-        private void btnDodajIgrača_Click(object sender, EventArgs e)
-        {
-            Form dodaj = new Dodaj();
-            dodaj.Show();
-        }
+       
 
         private void Main_Load(object sender, EventArgs e)
         {
@@ -43,7 +39,7 @@ namespace Zadatak
 
         private void getIgraci()
         {
-            sql.query("select * from igrac");
+            sql.query2("select * from igrac");
             pregledIgracaGrid.DataSource = sql.ds.Tables[0];
         }
 
@@ -144,5 +140,7 @@ namespace Zadatak
                 MessageBox.Show("Označi podatak kojeg želiš obrisati!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+     
     }
 }

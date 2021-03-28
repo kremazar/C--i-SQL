@@ -50,7 +50,7 @@
             this.pregledIgracaGrid.Location = new System.Drawing.Point(12, 206);
             this.pregledIgracaGrid.Name = "pregledIgracaGrid";
             this.pregledIgracaGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.pregledIgracaGrid.Size = new System.Drawing.Size(776, 232);
+            this.pregledIgracaGrid.Size = new System.Drawing.Size(648, 267);
             this.pregledIgracaGrid.TabIndex = 1;
             this.pregledIgracaGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pregledIgracaGrid_CellClick);
             // 
@@ -162,7 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(725, 540);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
