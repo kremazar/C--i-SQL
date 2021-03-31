@@ -15,6 +15,17 @@ namespace Zadatak
         public Main()
         {
             InitializeComponent();
+            pregledIgracaGrid.BorderStyle = BorderStyle.None;
+            pregledIgracaGrid.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            pregledIgracaGrid.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            pregledIgracaGrid.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            pregledIgracaGrid.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            pregledIgracaGrid.BackgroundColor = Color.White;
+
+            pregledIgracaGrid.EnableHeadersVisualStyles = false;
+            pregledIgracaGrid.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            pregledIgracaGrid.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            pregledIgracaGrid.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
         dbControl sql = new dbControl();
@@ -49,17 +60,20 @@ namespace Zadatak
         }
         void dodajIgraca()
         {
-            sql.Param("ime", textIme.Text);
-            sql.Param("prezime", textPrezime.Text);
-            sql.Param("pozicija", textPozicija.Text);
-            sql.Param("klub", textKlub.Text);
-            sql.query("insert into igrac (ime,prezime,pozicija,klub) values(@ime,@prezime,@pozicija,@klub)");
-            if (sql.Check4error(true))
+            if (isValid())
             {
-                return;
+                sql.Param("ime", textIme.Text);
+                sql.Param("prezime", textPrezime.Text);
+                sql.Param("pozicija", textPozicija.Text);
+                sql.Param("klub", textKlub.Text);
+                sql.query("insert into igrac (ime,prezime,pozicija,klub) values(@ime,@prezime,@pozicija,@klub)");
+                if (sql.Check4error(true))
+                {
+                    return;
+                }
+                MessageBox.Show("Dodan igrač!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                getIgraci();
             }
-            MessageBox.Show("Dodan igrač!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            getIgraci();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -141,6 +155,6 @@ namespace Zadatak
             }
         }
 
-     
+       
     }
 }
