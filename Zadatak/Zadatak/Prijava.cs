@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Zadatak
 {
-    public partial class Form1 : Form
+    public partial class Prijava : Form
     {
-        public Form1()
+        public Prijava()
         {
             InitializeComponent();
         }
         dbControl sql = new dbControl();
         private void button2_Click(object sender, EventArgs e)
         {
-            Register rf = new Register();
+            Registracija rf = new Registracija();
             Hide();
             rf.ShowDialog();
         }
@@ -40,7 +40,7 @@ namespace Zadatak
         {
             if (Login()==true)
             {
-                Main mf = new Main();
+                Igraci mf = new Igraci();
                 Hide();
                 mf.ShowDialog();
             }

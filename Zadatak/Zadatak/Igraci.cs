@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace Zadatak
 {
-    public partial class Main : Form
+    public partial class Igraci : Form
     {
-        public Main()
+        public Igraci()
         {
             InitializeComponent();
             pregledIgracaGrid.BorderStyle = BorderStyle.None;
@@ -34,7 +34,7 @@ namespace Zadatak
         {
             foreach (Form frm in Application.OpenForms)
             {
-                if (frm is Form1)
+                if (frm is Prijava)
                 {
                     frm.Show();
                 }

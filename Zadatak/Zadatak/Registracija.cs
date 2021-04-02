@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Zadatak
 {
-    public partial class Register : Form
+    public partial class Registracija : Form
     {
-        public Register()
+        public Registracija()
         {
             InitializeComponent();
         }
@@ -28,42 +28,35 @@ namespace Zadatak
             }
             MessageBox.Show("Registered","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-   
+       
 
         private void Register_FormClosing(object sender, FormClosingEventArgs e)
         {
             foreach (Form frm in Application.OpenForms)
             {
-                if (frm is Form1)
+                if (frm is Prijava)
                 {
                     frm.Show();
                 }
             }
         }
 
-   
-
-        private void txtPass_TextChanged_1(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            txtPass.PasswordChar = '*';
+            Close();
         }
 
-        private void btnReg_Click_1(object sender, EventArgs e)
+        private void btnReg_Click(object sender, EventArgs e)
         {
             register();
-            Form rf = new Form1();
+            Form rf = new Prijava();
             Hide();
             rf.ShowDialog();
         }
 
-        private void btnCancel_Click_1(object sender, EventArgs e)
+        private void txtPass_TextChanged(object sender, EventArgs e)
         {
-            Close();
+            txtPass.PasswordChar = '*';
         }
     }
 }

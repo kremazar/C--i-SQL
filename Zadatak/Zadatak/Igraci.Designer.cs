@@ -1,6 +1,6 @@
 ﻿namespace Zadatak
 {
-    partial class Main
+    partial class Igraci
     {
         /// <summary>
         /// Required designer variable.
@@ -139,7 +139,7 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 23);
             this.btnReset.TabIndex = 19;
-            this.btnReset.Text = "Reset";
+            this.btnReset.Text = " Resetiraj";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -160,7 +160,7 @@
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 18;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Obriši";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -181,7 +181,7 @@
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 17;
-            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Text = "Preimenuj";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -202,7 +202,7 @@
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(75, 23);
             this.btnDodaj.TabIndex = 16;
-            this.btnDodaj.Text = "Insert";
+            this.btnDodaj.Text = "Dodaj";
             this.btnDodaj.UseVisualStyleBackColor = true;
             this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
@@ -238,14 +238,16 @@
             this.textPozicija.Size = new System.Drawing.Size(151, 20);
             this.textPozicija.TabIndex = 13;
             // 
-            // Main
+            // Igraci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(766, 498);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Main";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "Igraci";
             this.Text = "Main";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.Load += new System.EventHandler(this.Main_Load);

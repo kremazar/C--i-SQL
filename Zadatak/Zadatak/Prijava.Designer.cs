@@ -1,6 +1,6 @@
 ﻿namespace Zadatak
 {
-    partial class Form1
+    partial class Prijava
     {
         /// <summary>
         /// Required designer variable.
@@ -48,7 +48,7 @@
             this.btnLog.Name = "btnLog";
             this.btnLog.Size = new System.Drawing.Size(75, 23);
             this.btnLog.TabIndex = 0;
-            this.btnLog.Text = "Login";
+            this.btnLog.Text = "Prijava";
             this.btnLog.UseVisualStyleBackColor = true;
             this.btnLog.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -59,7 +59,7 @@
             this.btnReg.Name = "btnReg";
             this.btnReg.Size = new System.Drawing.Size(75, 23);
             this.btnReg.TabIndex = 1;
-            this.btnReg.Text = "Register";
+            this.btnReg.Text = "Registracija";
             this.btnReg.UseVisualStyleBackColor = true;
             this.btnReg.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -67,21 +67,21 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 53);
+            this.label2.Location = new System.Drawing.Point(47, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Password";
+            this.label2.Text = "Lozinka: ";
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 13);
+            this.label1.Location = new System.Drawing.Point(33, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Username";
+            this.label1.Text = "Korisničko ime:";
             // 
             // txtPass
             // 
@@ -125,11 +125,11 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(322, 28);
+            this.label5.Location = new System.Drawing.Point(313, 28);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 37);
+            this.label5.Size = new System.Drawing.Size(114, 37);
             this.label5.TabIndex = 16;
-            this.label5.Text = "Login";
+            this.label5.Text = "Prijava";
             // 
             // tableLayoutPanel2
             // 
@@ -152,14 +152,15 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(291, 121);
             this.tableLayoutPanel2.TabIndex = 17;
             // 
-            // Form1
+            // Prijava
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(766, 498);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Prijava";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
